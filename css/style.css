@@ -1,0 +1,420 @@
+#mobile-nav-toggle {
+    position: fixed;
+    right: 15px;
+    z-index: 999;
+    top: 18px;
+    border: 0;
+    background: none;
+    font-size: 24px;
+    display: none;
+    transition: all 0.4s;
+    outline: none;
+    cursor: pointer;
+}
+@media (max-width: 960px){
+#mobile-nav-toggle {
+    display: inline;
+}
+.nav{
+    display: none;
+}
+}
+#header {
+    padding: 0px 0px 20px 0px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    transition: all 0.5s;
+    z-index: 997;
+}
+#header.header-scrolled {
+    background: rgba(0, 0, 0, 0.7);
+    transition: all 0.5s;
+}
+.main-menu {
+    padding-top: 20px;
+}
+.row1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-content: center;
+}
+.logo{
+    width: auto;
+    z-index: 1;
+}
+.logo a {
+    background: orange;
+    padding: 6px 18px;
+    color: white;
+    text-decoration: none;
+    font-size: x-large;
+    font-family: cursive;
+    font-style: italic;
+}
+.nav{
+    width: auto;
+}
+.nav-menu{
+    display: flex;
+    margin: 0px;
+}
+.nav-menu li{
+    padding: 0px 20px;
+    list-style: none;
+}
+.nav-menu li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+/* banner section */
+
+.banner-area {
+    background: url(/assets/banner-bg.jpg.webp) center center / cover;
+    background-repeat: no-repeat;
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    padding: 50px;
+}
+.banner-area .overlay-bg {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.overlay {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+.title{
+    position: relative;
+    z-index: 3;
+}
+.banner-content h1 {
+    color: #fff;
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 1em;
+}
+.banner-content .sub-head {
+    max-width: 550px;
+    margin-bottom: 20px;
+    margin-top: 5px;
+}
+.banner-area .primary-btn {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.header-btn {
+    background: #fff;
+    border-radius: 0;
+    color: #222 !important;
+    padding-left: 30px;
+    padding-right: 30px;
+    border: 1px solid transparent;
+    color: #fff;
+}
+.primary-btn {
+    background-color: #fab700;
+    line-height: 42px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border: 1px solid transparent;
+    color: #fff;
+    display: inline-block;
+    font-weight: 500;
+    position: relative;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    position: relative;
+    text-decoration: none;
+}
+.primary-btn:hover{
+    background-color: transparent;
+    color: white !important;
+    border: 2px solid white;
+}
+
+ .dog_thumb {
+    position: absolute;
+    bottom: 0;
+    right: 0%;
+    bottom: -94px;
+    z-index: 1;
+}
+.dog_thumb img {
+    max-width: 50%;
+    float: right;
+}
+
+/* about us */
+
+.adapt_area {
+    padding-bottom: 90px;
+    padding-top: 125px;
+}
+.section_title h3 {
+    font-size: 53px;
+    font-weight: 700;
+    line-height: 60px;
+    color: #191d34;
+    font-family: "Poppins", sans-serif;
+}
+.section_title h3 span {
+    font-weight: 300;
+}
+.adapt_area .adapt_help .section_title p {
+    color: #66666f;
+    line-height: 28px;
+    font-size: 16px;
+    margin-bottom: 54px;
+    margin-top: 30px;
+}
+.boxed-btn3 {
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    padding: 17px 55px;
+    font-family: "Poppins", sans-serif;
+    display: inline-block;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+    background-position: 100% 0;
+    background-position: 0 0;
+    background-image: -webkit-linear-gradient(0deg, #f14437 0%, #ed5b0d 99%);
+    text-decoration: none;
+}
+.adapt_area .adapt_about .single_adapt {
+    margin-bottom: 40px;
+    box-shadow: 0px 16px 35px 0px rgb(0 0 2 / 8%);
+    border-radius: 14px;
+    background: #fff;
+    padding: 40px 40px 33px 40px;
+}
+.adapt_area .adapt_about .single_adapt .adapt_content h3 {
+    font-size: 60px;
+    font-weight: 700;
+    font-family: "Poppins", sans-serif;
+    color: #383737;
+    display: inline-block;
+    margin-bottom: 2px;
+    margin-top: 22px;
+    line-height: 1;
+}
+.adapt_area .adapt_about .single_adapt .adapt_content p {
+    font-size: 20px;
+    color: #808080;
+    font-weight: 400;
+    font-family: "Open Sans", sans-serif;
+    display: block;
+    margin-bottom: 0;
+}
+/*  */
+
+.book-groomer-section.adopt-love-section {
+    padding-top: 80px;
+    background-image: url(//dm6g3jbka53hp.cloudfront.net/static-images/adopt-love-20210430.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-height: 558px;
+    padding-bottom: 50px;
+}
+
+.book-groomer-section .card-book {
+    padding: 50px 0 0;
+    text-align: center;
+}
+.foundation-content-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 90px;
+}
+.foundation-img {
+    max-width: 350px;
+    margin-right: 50px;
+}
+.foundation-content {
+    max-width: 450px;
+}
+.book-groomer-section h2 {
+    font-weight: 900;
+    line-height: 1.4;
+}
+.book-groomer-section p {
+    /* width: 50%; */
+    margin: auto auto 30px;
+    font-size: 14px;
+    font-weight: 600;
+}
+.banner-link {
+    max-width: 340px;
+    width: 100%;
+}
+button.adopt-love-cta {
+    background: #fff;
+    border: none;
+    border-radius: 6px;
+    color: #515252;
+    height: 50px;
+    margin-top: 10px;
+}
+.banner-link button {
+    /* color: #fff; */
+    /* background: #ff7815; */
+    /* border-color: #ff7815; */
+    margin-bottom: 0;
+    width: 100%;
+    /* height: 60px; */
+    font-size: 22px;
+    max-width: 340px;
+    font-weight: 700;
+}
+@media screen and (max-width: 767px){
+    .book-groomer-section.adopt-love-section {
+    background-position: top;
+    max-height: 958px;
+    padding-bottom: 30px;
+}
+}
+/* process to adopt */
+
+.process-area {
+    background-color: #f9f9ff;
+}
+.section-gap {
+    padding: 120px 0;
+    position: relative;
+}
+.single-process{
+    text-align: center;
+    display: grid;
+}
+.process-area .single-process .lnr {
+    font-size: 35px;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+.pb-60 {
+    padding-bottom: 60px;
+}
+.lnr {
+    font-family: 'Linearicons-Free';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin-bottom: 20px;
+}
+.single-process a{
+    text-decoration: none;
+    outline: 0;
+   
+}
+.section-gap .cat_thumb{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    overflow: hidden;
+    right: 0;
+    z-index: 1;
+}
+.section-gap .cat_thumb img{
+    position: relative;
+    /* right: 62%; */
+    animation: cat 2s infinite ease-in-out alternate;
+}
+@keyframes cat {
+    0%{
+        right: 0%;
+    }
+    100%{
+        right: 10%;
+    }
+}
+
+/* volunteer */
+
+.calltoaction-area {
+    background: url(/assets/call-bg.jpg.webp) center;
+    background-size: cover;
+    text-align: center;
+}
+.section-gap {
+    padding: 120px 0;
+}
+.relative {
+    position: relative;
+}
+.calltoaction-area .overlay-bg {
+    background-color: rgba(250, 183, 0, 0.75);
+}
+.calltoaction-area p {
+    margin: 20px 0;
+    max-width: 830px;
+    display: inline-block;
+}
+.calltoaction-area h1, .calltoaction-area p, .calltoaction-area .buttons {
+    z-index: 2;
+}
+.calltoaction-area .primary-btn {
+    background-color: #fff;
+    margin: 10px;
+    color: #222;
+}
+.calltoaction-area .primary-btn:hover{
+    background-color: transparent;
+    color: white !important;
+    border: 2px solid white;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+    
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }

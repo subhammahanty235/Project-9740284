@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <button
+      type="button"
+      id="mobile-nav-toggle"
+      style="color: white"
+      onclick="openNav()"
+    >
+      <i class="fa-solid fa-bars"></i>
+    </button>
+    <header id="header" class="header-scrolled">
+      <div class="container main-menu">
+        <div class="row1">
+          <div id="logo" class="logo">
+            <a href="index.html">Pet Shelter</a>
+          </div>
+          <nav id="nav-menu-container" class="nav">
+            <ul class="nav-menu" style="touch-action: pan-y">
+              <li class="menu-active"><a href="index.html">Home</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="cats.html">Cats</a></li>
+              <li><a href="dogs.html">Dogs</a></li>
+              <li><a href="volunteer.html">Volunteer</a></li>
+
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!-- banner section -->
+
+    <section class="banner-area relative" id="home">
+      <div class="container">
+        <div class="overlay overlay-bg"></div>
+        <div
+          class="row fullscreen d-flex align-items-center justify-content-start"
+          style="height: 653px"
+        >
+          <div class="banner-content col-lg-8 col-md-12 title">
+            <h1 class="text-uppercase">
+              Adopt Us. <br />
+              We need your help.
+            </h1>
+            <p class="text-white sub-head">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod temp or incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim.
+            </p>
+            <a href="#" class="primary-btn header-btn text-uppercase"
+              >Find a pet to adopt</a
+            >
+          </div>
+
+          <div class="dog_thumb d-none d-lg-block">
+            <img src="/assets/dog.png.webp" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- adopt us -->
+
+    <div class="adapt_area">
+      <div class="container">
+        <div class="row justify-content-between align-items-center">
+          <div class="col-lg-5">
+            <div class="adapt_help">
+              <div class="section_title">
+                <h3><span>We need your</span> help Adopt Us</h3>
+                <p>
+                  Lorem ipsum dolor sit , consectetur adipiscing elit, sed do
+                  iusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Quis ipsum suspendisse ultrices.
+                </p>
+                <a href="contact.html" class="boxed-btn3">Contact Us</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="adapt_about">
+              <div class="row align-items-center">
+                <div class="col-lg-6 col-md-6">
+                  <div class="single_adapt text-center">
+                    <img src="/assets/1.png.webp" alt="" />
+                    <div class="adapt_content">
+                      <h3 class="counter">452</h3>
+                      <p>Pets Available</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                  <div class="single_adapt text-center">
+                    <img src="/assets/3.png.webp" alt="" />
+                    <div class="adapt_content">
+                      <h3><span class="counter">52</span>+</h3>
+                      <p>Pets Available</p>
+                    </div>
+                  </div>
+                  <div class="single_adapt text-center">
+                    <img src="/assets/2.png.webp" alt="" />
+                    <div class="adapt_content">
+                      <h3><span class="counter">52</span>+</h3>
+                      <p>Pets Available</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--  -->
+
+    <section class="book-groomer-section adopt-love-section">
+      <div class="card-book">
+        <!--      <svg width="32" height="32" fill="#1B1F23" viewBox="0 0 32 32"><path d="M24 16H6v2h18v-2zm-6 4v2H6v-2h12zm-4 4H6v2h8v-2z"></path><path fill-rule="evenodd" d="M12 4a4 4 0 1 1 5 3.874V10h11a3 3 0 0 1 3 3v9.172a3 3 0 0 1-.879 2.12l-6.828 6.83a3 3 0 0 1-2.121.878H4a3 3 0 0 1-3-3V13a3 3 0 0 1 3-3h11V7.874A4.002 4.002 0 0 1 12 4zm4-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm13 11v9.013a1.609 1.609 0 0 0-.207-.013H22.5a1.5 1.5 0 0 0-1.5 1.5v6.293c0 .07.005.14.013.207H4a1 1 0 0 1-1-1V13a1 1 0 0 1 1-1h11v1a1 1 0 1 0 2 0v-1h11a1 1 0 0 1 1 1zm-1.414 11L23 28.586V24h4.586z" clip-rule="evenodd"></path></svg>-->
+        <div class="foundation-content-container">
+          <img
+            src="//dm6g3jbka53hp.cloudfront.net/static-images/adopt-dont-shop-thepetnest.svg"
+            class="foundation-img"
+          />
+          <div class="foundation-content">
+            <h2 class="">#AdoptLove</h2>
+            <p class="adopt-love-description">
+              Approximately 1478 dogs &amp; cats die every day on road in India.
+              ThePetNest is on a mission to provide every dog and cat a home
+              before 2035. It’s just one of the many ways ThePetNest! gives back
+              and helps you become a part of something larger. Join ThePetStar
+              Community and help setting up Pet houses in your surrounding for
+              strays.
+            </p>
+          </div>
+        </div>
+        <a class="banner-link">
+          <button
+            class="adopt-love-cta"
+            ng-click="hcV1Ctrl.scrollToTop()"
+            type="button"
+          >
+            Adopt a pet
+          </button>
+        </a>
+        <!--      <div class="cat-dog-img-container">-->
+        <!--        <img alt="Online Veterinary Service for Cat" class="cat-looking-dog smart_image" data-src="/cat-vet-30032020.png">-->
+        <!--        <img alt="Online Veterinary Service for Dog" class="dog-holding-phone smart_image" data-src="/dog-on-phone-30032020.png">-->
+        <!--      </div>-->
+      </div>
+    </section>
+
+    <!-- process to adopt -->
+
+    <section class="process-area section-gap">
+      <div class="container">
+        <div class="row d-flex justify-content-center">
+          <div class="menu-content pb-60 col-lg-8">
+            <div class="title text-center">
+              <h1 class="mb-10">Process to adopt a pet</h1>
+              <p>Who are in extremely love with eco friendly system.</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 col-md-6">
+            <div class="single-process">
+              <span class="lnr lnr-thumbs-up"
+                ><i class="fa-solid fa-thumbs-up"></i
+              ></span>
+              <a href="#">
+                <h4>Pet Selection</h4>
+              </a>
+              <p>
+                inappropriate behavior is often laughed off as “boys will be
+                boys,” women face higher conduct.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="single-process">
+              <span class="lnr lnr-user"><i class="fa-solid fa-user"></i></span>
+              <a href="#">
+                <h4>Meeting Authority</h4>
+              </a>
+              <p>
+                inappropriate behavior is often laughed off as “boys will be
+                boys,” women face higher conduct.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="single-process">
+              <span class="lnr lnr-license"
+                ><i class="fa-solid fa-wand-magic-sparkles"></i
+              ></span>
+              <a href="#">
+                <h4>Adoption Form Filling</h4>
+              </a>
+              <p>
+                inappropriate behavior is often laughed off as “boys will be
+                boys,” women face higher conduct.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="single-process">
+              <span class="lnr lnr-magic-wand"
+                ><i class="fa-solid fa-wand-magic-sparkles"></i
+              ></span>
+              <a href="#">
+                <h4>Bring to new family</h4>
+              </a>
+              <p>
+                inappropriate behavior is often laughed off as “boys will be
+                boys,” women face higher conduct.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="cat_thumb d-none d-lg-block" style="bottom: 0%;">
+            <img src="/assets/cat.png" alt="">
+          </div>
+      </div>
+    </section>
+
+    <!-- volunteer -->
+
+    <section class="calltoaction-area section-gap relative">
+      <div class="container">
+        <div class="overlay overlay-bg"></div>
+        <div class="row align-items-center justify-content-center">
+          <h1 class="text-white">Want to help? Become a Volunteer</h1>
+          <p class="text-white">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim. Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+            sed do eiusmod tempor.
+          </p>
+          <div class="buttons d-flex flex-row justify-content-center">
+            <a href="#" class="primary-btn text-uppercase">View pdf details</a>
+            <a href="#" class="primary-btn text-uppercase">Register now</a>
+          </div>
+          <div class="dog_thumb d-none d-lg-block" style="bottom: 0%;">
+            <img src="/assets/dog2.png" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- side nav bar -->
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Clients</a>
+      <a href="#">Contact</a>
+    </div>
+    <script src="/script/script.js"></script>
+  </body>
+</html>
