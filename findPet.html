@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- findpet CSS -->
+    <link rel="stylesheet" href="/css/findPet.css">
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+</head>
+<body>
+    <button
+    type="button"
+    id="mobile-nav-toggle"
+    style="color: white"
+    onclick="openNav()"
+  >
+    <i class="fa-solid fa-bars"></i>
+  </button>
+  <header id="header" class="header-scrolled">
+    <div class="container main-menu">
+      <div class="row1">
+        <div id="logo" class="logo">
+          <a href="index.html">Pet Shelter</a>
+        </div>
+        <nav id="nav-menu-container" class="nav">
+          <ul class="nav-menu" style="touch-action: pan-y">
+            <li class="menu-active"><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="cats.html">Cats</a></li>
+            <li><a href="dogs.html">Dogs</a></li>
+            <li><a href="volunteer.html">Volunteer</a></li>
+
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- four button top -->
+
+  <nav class="navbar navbar-expand-lg navbar-light petnav">
+    <div class="container-fluid">
+        <form class="form">
+          <div class="input-group ">
+            <label class="input-group-text" for="inputGroupSelect01">Pet Type</label>
+            <select class="form-select" id="inputGroupSelect01">
+              <option selected>Choose...</option>
+              <option value="1">Cat</option>
+              <option value="2">Dog</option>
+            </select>
+          </div>
+
+          <div class="input-group ">
+            <label class="input-group-text" for="inputGroupSelect01">State</label>
+            <select class="form-select" id="inputGroupSelect01">
+              <option selected>Choose...</option>
+              <option value="1"> Andaman And Nicobar Islands</option>
+              <option value="2">Andhra Pradesh</option>
+              <option value="3">Arunachal Pradesh</option>
+              <option value="4">Assam</option>
+              <option value="5">Bihar</option>
+              <option value="6">Chandigarh</option>
+              <option value="7">Chhattisgarh</option>
+              <option value="8">Dadra And Nagar Haveli</option>
+              <option value="9">Delhi</option>
+              <option value="10">Goa</option>
+              <option value="11">Gujarat</option>
+              <option value="12">Haryana</option>
+              <option value="13">Himachal Pradesh</option>
+              <option value="14">Jammu And Kashmir</option>
+              <option value="15">Jharkhand</option>
+              <option value="16">Karnataka</option>
+              <option value="17">Kerala</option>
+              <option value="18">Madhya Pradesh</option>
+              <option value="19">Maharashtra</option>
+              <option value="20">Manipur</option>
+              <option value="21">Meghalaya</option>
+              <option value="22">Mizoram</option>
+              <option value="23">Nagaland</option>
+              <option value="24">Odisha</option>
+              <option value="25">Puducherry</option>
+              <option value="26">Punjab</option>
+              <option value="27">Rajasthan</option>
+              <option value="28">Tamil Nadu</option>
+              <option value="29">Telangana</option>
+              <option value="30">Tripura</option>
+              <option value="31">Uttar Pradesh</option>
+              <option value="32">Uttarakhand</option>
+              <option value="33">West Bengal</option>
+            </select>
+          </div>
+
+          <div class="input-group ">
+            <label class="input-group-text" for="inputGroupSelect01">City</label>
+            <select class="form-select" id="inputGroupSelect01">
+              <option selected>Choose...</option>
+              <option value="1">Delhi</option>
+              <option value="2">New Delhi</option>
+            </select>
+          </div>
+
+          <button type="button" class="btn btn-search">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <!-- card section -->
+  <div class="container-fluid" style="padding: 50px 15px;">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 g-3 " style="align-content: space-around; justify-content: space-evenly;">
+      <div class="card_">
+        <img src="./assets/pet-image-1.jpeg" alt="">
+        <div class="info">
+          <h4>name</h4>
+          <div class="progress">
+            <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">5 age</div>
+          </div>
+          <p>gender</p>
+        </div>
+      </div>
+      <div class="card_">
+        <img src="./assets/pet-image-2.jpeg" alt="">
+        <div class="info">
+          <h4>name</h4>
+          <div class="progress">
+            <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">10 age</div>
+          </div>
+          <p>gender</p>
+        </div>
+      </div>
+      <div class="card_">
+        <img src="./assets/pet-image-3.jpeg" alt="">
+        <div class="info">
+          <h4>name</h4>
+          <div class="progress">
+            <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">7 age</div>
+          </div>
+          <p>gender</p>
+        </div>
+      </div>
+      <div class="card_">
+        <img src="./assets/pet-image-4.jpeg" alt="">
+        <div class="info">
+          <h4>name</h4>
+          <div class="progress">
+            <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">9 age</div>
+          </div>
+          <p>gender</p>
+        </div>
+      </div>
+      <div class="card_">
+        <img src="./assets/pet-image-5.jpeg" alt="">
+        <div class="info">
+          <h4>name</h4>
+          <div class="progress">
+            <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">6 age</div>
+          </div>
+          <p>gender</p>
+        </div>
+      </div>
+      <div class="card_">
+        <img src="./assets/pet-image-6.jpeg" alt="">
+        <div class="info">
+          <h4>name</h4>
+          <div class="progress">
+            <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">2 age</div>
+          </div>
+          <p>gender</p>
+        </div>
+      </div>
+
+      
+    </div>
+  </div>
+  
+
+  <!-- side nav bar -->
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+      >&times;</a
+    >
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Clients</a>
+    <a href="#">Contact</a>
+  </div>
+  <script src="/script/script.js"></script>
+</body>
+</html>
