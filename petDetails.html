@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.rtl.min.css" integrity="sha512-ByoNUqMeDIr+brds0nE9pYre7UPr/mADUvT6PRaa/ZlgrRmsyyTWfG/a6Jfr1quBfoZJd7Bqtiiwvvmo/RWNRA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/css/petDetails.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    
+</head>
+<body>
+  
+  <div id="1"></div>
+    <script>
+        fetch("header.html").then((respones)=>{
+            return respones.text();
+        }).then((result)=>{
+            // document.write(result);
+            document.getElementById(1).innerHTML=result
+        })
+    </script>
+
+  <div class="container section1">
+    <div class="row">
+      <div class="col-12 col-sm-12 col-md-6 d-flex justify-content-center">
+      <div class="left">
+        <img src="/assets/pet-image-1.jpeg" alt="" id="imageBox">
+      </div>
+      <div class="sub-pic">
+        <div class="left left-1" >
+          <img src="/assets/pet-image-2.jpeg" alt="" onclick="myfunction(this)">
+        </div>
+        <div class="left left-1" >
+          <img src="/assets/pet-image-3.jpeg" alt="" onclick="myfunction(this)">
+        </div>
+        <div class="left left-1" >
+          <img src="/assets/pet-image-1.jpeg" alt="" onclick="myfunction(this)">
+        </div>
+      </div>
+      
+
+    </div>
+    
+      <div class="col-12 col-sm-12 col-md-6">
+        <div class="righ">
+          <h2 class="R-title">My name is Charlie!</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem facere nobis, numquam provident totam quis ipsam vero voluptatibus ullam eveniet?</p>
+          <div style="width: 100%;">
+            <h5 class="prices">Adoption Fee: <strong>$400</strong>
+          </h5>
+        </div>
+        <div class="button">
+        <a href="# " style="text-decoration: none; color: white;">Ask About Me</a>
+        </div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+<section style="padding: 100px 0px;
+border-bottom: 2px solid;">
+  <div class="container">
+    <div class="row">
+      <div class="col-12" style="margin-bottom: 40px;">
+        <h2 style="font-size: 3rem;" class="facts">Facts About Me</h2>
+      </div>
+      <div class="col-sm-12 col-md-6 col-12">
+        <table class="table">
+          <tr>
+            <th scope="row">Breed</th>
+            <td>Rottweiler</td>
+          </tr>
+          <tr>
+            <th scope="row">Vaccinated</th>
+            <td>Yes</td>
+          </tr>
+          <tr>
+            <th scope="row">Age</th>
+            <td>Adolescence</td>
+          </tr>
+        </table>
+      </div>
+      <div class="col-sm-12 col-md-6 col-12">
+        <table class="table">
+          <tr>
+            <th scope="row">Gender</th>
+            <td>Male</td>
+          </tr>
+          <tr>
+            <th scope="row">Pet Id</th>
+            <td>TPN7320</td>
+          </tr>
+          <tr>
+            <th scope="row">Neutered</th>
+            <td>No</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="padding: 100px 0px;
+border-bottom: 2px solid;" class="section2">
+  <div class="container">
+    <div class="row">
+      <div class="col-12" style="margin-bottom: 40px;">
+        <h2 style="font-size: 3rem;" class="facts">My Info</h2>
+      </div>
+      <div class="col-sm-12 col-md-6 col-12">
+        <table class="table">
+          <tr>
+            <th scope="row"><i class="fa-solid fa-badge-check"></i>Spayed</th>
+            
+            
+          </tr>
+          <tr>
+            <th scope="row"><i class="fa-solid fa-badge-check"></i>Good with Cats</th>
+            
+          </tr>
+          <tr>
+            <th scope="row"><i class="fa-solid fa-badge-check"></i>Shots Up to Date</th>
+            
+          </tr>
+        </table>
+      </div>
+      <div class="col-sm-12 col-md-6 col-12">
+        <table class="table">
+          <tr>
+            <th scope="row"><i class="fa-solid fa-badge-check"></i>Good with Dogs</th>
+            
+          </tr>
+          <tr>
+            <th scope="row"><i class="fa-solid fa-badge-check"></i>Needs Loving Adopter</th>
+            
+          </tr>
+          <tr>
+            <th scope="row"><i class="fa-solid fa-badge-check"></i>Good with Kids</th>
+            
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- section 3 -->
+
+<section class="section3">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h3>My Story</h3>
+        <p>
+          Charlie is a dream dog he will cuddle with you and sleep under any blankets and if you take a little bal out he will be ready to play. He brings the ball back and will keep you laughing all day. He is the most easy going guy. He is not hyper, not a barker, he is wonderful. He is crate trained, leash trained, potty trained and fetch trained. How this angel ended up in a shelter is beyond me. They claimed he was not potty trained, would cry in a crate and did not like men, non of this could be further then the truth. Leaving this little guy to die in a shelter was heart breaking. We saw him and instantly fell in love. And you will too when you meet him. Located in West Hollywood,Ca
+        </p>
+      </div>
+      <div class="col-sm-12 col-md-6 col-12">
+        <div style="position: relative; padding: 30px;">
+          <img src="/assets/shop-page-img1.jpg" alt="" style="width: 100%;">
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-12">
+        <div style="position: relative; padding: 30px;">
+          <img src="/assets/shop-page-img2.jpg" alt="" style="width: 100%;">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- section 4 -->
+<section class="section4">
+<div class="container">
+  <div class="row">
+    <div class="col-12" style="position: relative;">
+      <div class="about">
+        <div class="side-img">
+          <img src="https://sppagebuilder.com/images/2020/pet-care/color-path1.png" alt="">
+        </div>
+      </div>
+      <div class="about2">
+        <div class="row">
+          <div class="col-sm-6 col-md-6 col-6">
+            <div class="contact-img">
+              <img src="https://sppagebuilder.com/images/2020/pet-care/cta-img.png" alt="">
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-12">
+            <div class="right">
+              <h3  style="color: wheat; margin-bottom: 20px;">Let's Talk 
+                <br>
+                 About Your Pet
+                </h3>
+                <a href="#" class="contact-btn">CONTACT US</a>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+  <!-- footer section -->
+
+  <div id="2"></div>
+    <script>
+        fetch("footer.html").then((respones)=>{
+            return respones.text();
+        }).then((result)=>{
+            // document.write(result);
+            document.getElementById(2).innerHTML=result
+        })
+    </script>
+    <script src="/script/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.js" integrity="sha512-ec1IDrAZxPSKIe2wZpNhxoFIDjmqJ+Z5SGhbuXZrw+VheJu2MqqJfnYsCD8rf71sQfKYMF4JxNSnKCjDCZ/Hlw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

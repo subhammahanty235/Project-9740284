@@ -26,34 +26,15 @@
     ></script>
   </head>
   <body>
-    <button
-      type="button"
-      id="mobile-nav-toggle"
-      style="color: white"
-      onclick="openNav()"
-    >
-      <i class="fa-solid fa-bars"></i>
-    </button>
-    <header id="header" class="header-scrolled">
-      <div class="container main-menu">
-        <div class="row1">
-          <div id="logo" class="logo">
-            <a href="index.html">Pet Shelter</a>
-          </div>
-          <nav id="nav-menu-container" class="nav">
-            <ul class="nav-menu" style="touch-action: pan-y">
-              <li class="menu-active"><a href="index.html">Home</a></li>
-              <li><a href="about.html">About Us</a></li>
-              <li><a href="cats.html">Cats</a></li>
-              <li><a href="dogs.html">Dogs</a></li>
-              <li><a href="volunteer.html">Volunteer</a></li>
-
-              <li><a href="contact.html">Contact</a></li>
-            </ul>
-          </nav>
-        </div>
-      </div>
-    </header>
+    <div id="1"></div>
+    <script>
+        fetch("header.html").then((respones)=>{
+            return respones.text();
+        }).then((result)=>{
+            // document.write(result);
+            document.getElementById(1).innerHTML=result
+        })
+    </script>
 
     <!-- banner section -->
 

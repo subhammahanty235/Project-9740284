@@ -1,0 +1,231 @@
+body{
+  background-color: #F9F4F1 !important;
+}
+button {
+  width: 25%;
+}
+.section1 {
+  padding-top: 120px;
+  padding-bottom: 40px;
+}
+.righ {
+  padding-left: 55px;
+  width: 100%;
+  height: 100%;
+  align-content: center;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.R-title {
+  font-family: Heebo;
+  font-weight: 700;
+  font-size: 52px;
+  line-height: 65px;
+  letter-spacing: 0px;
+}
+.R-title,
+p {
+  visibility: visible;
+  animation-duration: 400ms;
+  animation-delay: 400ms;
+  animation-name: fadeInRight;
+}
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(20px, 0, 0);
+    transform: translate3d(20px, 0, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.left {
+  width: 280px;
+  height: 360px;
+  /* padding: 2rem 1rem; */
+  background-color: #fff;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  box-shadow: 0px 7px 10px rgb(0 0 0 / 50%);
+}
+.left img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.prices {
+  font-family: Heebo;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 44px;
+  letter-spacing: 0px;
+}
+
+.button {
+  padding: 5px 10px;
+  background-color: #e5745d;
+  color: #ffffff;
+  text-decoration: none;
+  width: 100%;
+  text-align: center;
+}
+.table tr{
+  visibility: visible;
+    animation-duration: 400ms;
+    animation-delay: 400ms;
+    animation-name: fadeInRight;
+}
+.table th {
+  font-weight: 700;
+  font-size: x-large;
+  border: none;
+}
+.table td{
+  font-weight: 700;
+  border: none;
+}
+.sub-pic{
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.left-1{
+  right: 0;
+    width: 100px;
+    height: 100px;
+    
+}
+.facts{
+  visibility: visible;
+    animation-duration: 400ms;
+    animation-delay: 400ms;
+    animation-name: fadeInUp;
+}
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    
+    transform: translate3d(0,20px,0);
+}
+100% {
+    opacity: 1;
+    
+    transform: translate3d(0,0,0);
+}
+}
+
+.section2 .table th {
+  font-weight: 300;
+  font-size: x-large;
+  border: none;
+  font-family: cursive;
+}
+
+.section3 {
+  padding-top: 100px;
+  padding-bottom: 40px;
+}
+.section3 h3{
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+.section3 p{
+  margin-top: 25px;
+  margin-bottom: 30px;
+  width: 80%;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+
+}
+.section4 {
+  padding-top: 105px;
+    padding-right: 4%;
+    padding-bottom: 120px;
+    padding-left: 4%;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    color: #333333;
+    border-radius: 0px;
+    position: relative;
+}
+.section4 .about{
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #15403D;
+    background-image: url(https://sppagebuilder.com/images/2020/pet-care/color-path2.png);
+    background-repeat: no-repeat;
+    background-size: inherit;
+    background-attachment: inherit;
+    background-position: 100% 100%;
+}
+.section4 .about.ide-img{
+  display: inline-block;
+    position: relative;
+    transition: all .4s ease;
+}
+.section4 .about2{
+  padding-top: 0px;
+    padding-right: 15px;
+    padding-bottom: 0px;
+    padding-left: 15px;
+    margin-top: 0px;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-left: auto;
+    border-radius: 0px;
+    max-width: 1140px;
+    position: absolute;
+    bottom: 0;
+}
+.section4 .contact-img{
+  display: inline-block;
+    position: relative;
+    transition: all .4s ease;
+    /* bottom: 114px; */
+}
+.section4 .contact-img img{
+  width: 63%;
+    float: right;
+}
+.contact-btn{
+  background-color: #E5745D;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+.about2 .right{
+  width: 100%;
+    display: flex;
+    height: 100%;
+    align-content: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+@media (max-width:759px) {
+  .section4 .contact-img{
+    display: none;
+  }
+  .about2 .right{
+    position: relative;
+    bottom: 55%;
+    left: 91%;
+  }
+}
